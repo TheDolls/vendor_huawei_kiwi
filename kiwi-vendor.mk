@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/global/ons/ons.bin:system/global/ons/ons.bin \
     vendor/huawei/kiwi/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
-    vendor/huawei/kiwi/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/huawei/kiwi/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/huawei/kiwi/proprietary/vendor/bin/huawei_version:system/vendor/bin/huawei_version \
     vendor/huawei/kiwi/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti \
@@ -93,8 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
     vendor/huawei/kiwi/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
     vendor/huawei/kiwi/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:system/vendor/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -108,9 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/libRBEGL_adreno.so:system/vendor/lib/egl/libRBEGL_adreno.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/lib_oeminfo_interface.so:system/vendor/lib/lib_oeminfo_interface.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -183,13 +177,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbt-hidlclient.so:system/vendor/lib/libbt-hidlclient.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbtaddr.so:system/vendor/lib/libbtaddr.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbtcheck.so:system/vendor/lib/libbtcheck.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbthost_if.so:system/vendor/lib/libbthost_if.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbtinfo.so:system/vendor/lib/libbtinfo.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libbtpower.so:system/vendor/lib/libbtpower.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
@@ -353,16 +340,14 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmcamera_ar1335_sunny_f13m01f.so:system/vendor/lib/libmmcamera_ar1335_sunny_f13m01f.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
@@ -436,18 +421,16 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libmmparser_lite.so:system/vendor/lib/libmmparser_lite.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxAlacDecSw.so:system/vendor/lib/libOmxAlacDecSw.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libOmxAmrDec.so:system/vendor/lib/libOmxAmrDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxApeDec.so:system/vendor/lib/libOmxApeDec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxApeDecSw.so:system/vendor/lib/libOmxApeDecSw.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxVpp.so:system/vendor/lib/libOmxVpp.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
@@ -455,7 +438,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
@@ -474,11 +456,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libvpplibrary.so:system/vendor/lib/libvpplibrary.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libwvhidl.so:system/vendor/lib/libwvhidl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
@@ -539,12 +521,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
@@ -556,7 +536,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
@@ -589,13 +568,66 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/sensors.kiwi.so:system/vendor/lib64/sensors.kiwi.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
+# WiFi Display
+PRODUCT_COPY_FILES += \
+    vendor/huawei/kiwi/proprietary/bin/wfdservice:system/bin/wfdservice \
+    vendor/huawei/kiwi/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+    vendor/huawei/kiwi/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/huawei/kiwi/proprietary/etc/wfdconfigsink.xml:/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+    vendor/huawei/kiwi/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/huawei/kiwi/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+    vendor/huawei/kiwi/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
+    vendor/huawei/kiwi/proprietary/lib/libdisplayconfig.so:system/lib/libdisplayconfig.so \
+    vendor/huawei/kiwi/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/huawei/kiwi/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/huawei/kiwi/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/huawei/kiwi/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/huawei/kiwi/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/huawei/kiwi/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/huawei/kiwi/proprietary/lib/libnl.so:system/lib/libnl.so \
+    vendor/huawei/kiwi/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/huawei/kiwi/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+    vendor/huawei/kiwi/proprietary/lib64/libdisplayconfig.so:system/lib64/libdisplayconfig.so \
+    vendor/huawei/kiwi/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/huawei/kiwi/proprietary/lib64/libnl.so:system/lib64/libnl.so \
+    vendor/huawei/kiwi/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
+    vendor/huawei/kiwi/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/huawei/kiwi/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+    vendor/huawei/kiwi/proprietary/vendor/bin/wifidisplayhalservice:system/vendor/bin/wifidisplayhalservice \
+    vendor/huawei/kiwi/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:system/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libmmosal_proprietary.so:system/vendor/lib/libmmosal_proprietary.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:system/vendor/lib/libwfdcommonutils_proprietary.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libwfdhaldsmanager.so:system/vendor/lib/libwfdhaldsmanager.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libwfdhdcpcp.so:system/vendor/lib/libwfdhdcpcp.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libwfdmmservice.so:system/vendor/lib/libwfdmmservice.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libwfdmodulehdcpsession.so:system/vendor/lib/libwfdmodulehdcpsession.so
+
 PRODUCT_PACKAGES += \
     colorservice \
     libhuawei_secure \
+    libidl \
     libloc_api_v02 \
     libloc_ds_api \
     libmdmdetect \
     liboeminfo \
+    libqmi_cci \
     libqmi_oem_api \
     libtfa9895 \
     libtime_genoff \
@@ -603,4 +635,6 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     qcrilmsgtunnel \
     QPerformance \
-    TimeService
+    TimeService \
+    WfdCommon \
+    WfdService
